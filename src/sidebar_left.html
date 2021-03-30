@@ -2,71 +2,157 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<!-- Bootstrap icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="../style/sidebar_left/fontawesome-all.min.css">
     <!-- SideBar left CSS -->
-    <link rel="stylesheet" href="../style/sidebar_left/sidebar_left.min.css">
+    <link rel="stylesheet" href="../styles/sidebar_left/sidebar_left.min.css">
 	<title>SidebarLeft - Fast & Courses</title>
 </head>
 <body class="bg-light">
 
 	<nav class="navbar navbar-expand navbar-dark bg-primary">
-	    <a class="sidebar-toggle mr-3" href="#"><i class="fa fa-bars"></i></a>
+	    <a class="sidebar-toggle mr-3" href="#"><i class="bi bi-list"></i></a>
 	    <a class="navbar-brand" href="#">Fast & Courses</a>
-
-	    <div class="navbar-collapse collapse">
-	        <ul class="navbar-nav ml-auto">
-	            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-envelope"></i> 5</a></li>
-	            <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-bell"></i> 3</a></li>
-	            <li class="nav-item dropdown">
-	                <a href="#" id="dd_user" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Doe</a>
-	                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd_user">
-	                    <a href="#" class="dropdown-item">Profile</a>
-	                    <a href="#" class="dropdown-item">Logout</a>
-	                </div>
-	            </li>
-	        </ul>
-	    </div>
 	</nav>
 
     <div class="d-flex">
 	    <div class="sidebar sidebar-dark bg-dark">
 	        <ul class="list-unstyled">
-	            <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
 	            <li>
-	                <a href="#sm_expand_1" data-toggle="collapse">
-	                    <i class="fa fa-fw fa-link"></i> Expandable Menu Item
+	                <a href="#sm_fruits_legumes" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/1882.jpg" style="border-radius: 8px; width: 30px;"> Fruits & Légumes
 	                </a>
-	                <ul id="sm_expand_1" class="list-unstyled collapse">
+	                <ul id="sm_fruits_legumes" class="list-unstyled collapse">
+	                    <li><a href="#">Fruits</a></li>
+	                    <li><a href="#">Légumes</a></li>
+	                    <li><a href="#">Fruits & Légumes Bio</a></li>
+	                    <li><a href="#">Jus de Fruits & Légumes frais</a></li>
+	                    <li><a href="#">Fruits & Légumes secs</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_viande_poisson" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/1921.jpg" style="border-radius: 8px; width: 30px;"> Viandes & Poissons
+	                </a>
+	                <ul id="sm_viande_poisson" class="list-unstyled collapse">
 	                    <li><a href="#">Submenu Item</a></li>
 	                    <li><a href="#">Submenu Item</a></li>
 	                </ul>
 	            </li>
-	            <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
-	            <li><a href="#"><i class="fa fa-fw fa-link"></i> Menu Item</a></li>
+	            <li>
+	                <a href="#sm_pains_patisseries" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/1952.jpg" style="border-radius: 8px; width: 30px;"> Pains & Pâtisseries
+	                </a>
+	                <ul id="sm_pains_patisseries" class="list-unstyled collapse">
+	                    <li><a href="#">Submenu Item</a></li>
+	                    <li><a href="#">Submenu Item</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_frais" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/28127.jpg" style="border-radius: 8px; width: 30px;"> Frais
+	                </a>
+	                <ul id="sm_frais" class="list-unstyled collapse">
+	                    <li><a href="#">Submenu Item</a></li>
+	                    <li><a href="#">Submenu Item</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_surgeles" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/2074.jpg" style="border-radius: 8px; width: 30px;"> Surgelés
+	                </a>
+	                <ul id="sm_surgeles" class="list-unstyled collapse">
+	                    <li><a href="#">Submenu Item</a></li>
+	                    <li><a href="#">Submenu Item</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_epicerie_salee" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/2112.jpg" style="border-radius: 8px; width: 30px;"> Epicerie salée
+	                </a>
+	                <ul id="sm_epicerie_salee" class="list-unstyled collapse">
+	                    <li><a href="#">Submenu Item</a></li>
+	                    <li><a href="#">Submenu Item</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_epicerie_sucree" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/2183.jpg" style="border-radius: 8px; width: 30px;"> Epicerie sucrée
+	                </a>
+	                <ul id="sm_epicerie_sucree" class="list-unstyled collapse">
+	                    <li><a href="#">Submenu Item</a></li>
+	                    <li><a href="#">Submenu Item</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_monde_region" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/30160.jpg" style="border-radius: 8px; width: 30px;"> Monde & régions
+	                </a>
+	                <ul id="sm_monde_region" class="list-unstyled collapse">
+	                    <li><a href="#">Submenu Item</a></li>
+	                    <li><a href="#">Submenu Item</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_boissons" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/27070.jpg" style="border-radius: 8px; width: 30px;"> Boissons
+	                </a>
+	                <ul id="sm_boissons" class="list-unstyled collapse">
+	                    <li><a href="#">Submenu Item</a></li>
+	                    <li><a href="#">Submenu Item</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_bebe" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/26953.jpg" style="border-radius: 8px; width: 30px;"> Bébé
+	                </a>
+	                <ul id="sm_bebe" class="list-unstyled collapse">
+	                    <li><a href="#">Submenu Item</a></li>
+	                    <li><a href="#">Submenu Item</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_hygiene_beaute" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/2415.jpg" style="border-radius: 8px; width: 30px;"> Hygiène & Beauté
+	                </a>
+	                <ul id="sm_hygiene_beaute" class="list-unstyled collapse">
+	                    <li><a href="#">Submenu Item</a></li>
+	                    <li><a href="#">Submenu Item</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_parapharmacie" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/2497.jpg" style="border-radius: 8px; width: 30px;"> Parapharmacie
+	                </a>
+	                <ul id="sm_parapharmacie" class="list-unstyled collapse">
+	                    <li><a href="#">Submenu Item</a></li>
+	                    <li><a href="#">Submenu Item</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_entretien_nettoyage" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/2589.jpg" style="border-radius: 8px; width: 30px;"> Entretien & Nettoyage
+	                </a>
+	                <ul id="sm_entretien_nettoyage" class="list-unstyled collapse">
+	                    <li><a href="#">Submenu Item</a></li>
+	                    <li><a href="#">Submenu Item</a></li>
+	                </ul>
+	            </li>
 	        </ul>
 	    </div>
 
 	    <div class="content p-4">
-	        <h2 class="mb-4">Blank/Starter</h2>
-
-	        <div class="card mb-4">
-	            <div class="card-body">
-	                This is a blank page you can use as a starting point.
-	            </div>
-	        </div>
+	        
 	    </div>
 	</div>
 
-	<!-- <script src="js/jquery.min.js"></script> -->
-	<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
-	<script src="js/bootadmin.min.js"></script>
+	<!-- Install JavaScript of this page -->
+	<script src="../js/sidebar_left/jquery.min.js"></script>
+	<script src="../js/sidebar_left/bootadmin.min.js"></script>
 
 	<!-- Install jQuery 3.5.1 -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
