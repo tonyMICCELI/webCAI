@@ -1,11 +1,12 @@
+//Classe Article pour afficher sur le site de courses
 class Article {
-	constructor(nom="Default", prix="1€", quantite="1Kg", image="../img/default.png", categories=[]) {
+	constructor(nom="Default", prix="1€", quantite="1Kg", image="../img/default.png", categorie='cat-default') {
 		this._nom = nom;
 		this._prix = prix;
 		this._quantite = quantite;
 		this._image = image;
-		this._categories = categories;
-		this._template = `<div class="col-2">
+		this._categorie = categorie;
+		this._template = `<div class="col-2 article-template" style="display: none;">
         					<div class="card card-header">
         						<h5>Default</h5>
         					</div>
@@ -22,19 +23,16 @@ class Article {
         				</div>`
 	}
 
+	//Gestion du template selon les différents attributs de l'objet
 	updateTemplate() {
 		const templateToChange = this._template;
-		const templateChanged = templateToChange.replace("<h5>Default</h5>", "<h5>"+this._nom+"</h5>").replace(">1€</h5>", ">"+this._prix+"</h5>").replace(">3Kg</h6>", ">"+this._quantite+"</h6>").replace("../img/default.png", this._image);
+		const templateChanged = templateToChange.replace("<h5>Default</h5>", "<h5>"+this._nom+"</h5>").replace(">1€</h5>", ">"+this._prix+"</h5>").replace(">3Kg</h6>", ">"+this._quantite+"</h6>").replace("../img/default.png", this._image).replace("col-2 article-template", "col-2 article-template "+this._categorie);
 		this._template = templateChanged;
 	}
 
+	//Affichage de l'article dans le selecteur choisi
 	displayArticle(selector) {
 		this.updateTemplate();
 		$(selector).append(this._template);
 	}
 }
-
-var article = new Article("nomTest", "25€", "45Kg", "../img/fraises.png");
-$(".testBtn").click(function(){
-	article.displayArticle(".insert-article");
-});
