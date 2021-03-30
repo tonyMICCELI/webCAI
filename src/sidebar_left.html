@@ -20,10 +20,10 @@
 	</nav>
 
     <div class="d-flex">
-	    <div class="sidebar sidebar-dark bg-dark">
+	    <div class="sidebar sidebar-dark bg-dark toggled">
 	        <ul class="list-unstyled">
 	            <li>
-	                <a href="#sm_fruits_legumes" data-toggle="collapse">
+	                <a href="#sm_fruits_legumes" data-toggle="collapse" class="collapse" aria-expanded="false">
 	                    <img src="../img/sidebar_left/1882.jpg" style="border-radius: 8px; width: 30px;"> Fruits & Légumes
 	                </a>
 	                <ul id="sm_fruits_legumes" class="list-unstyled collapse">
@@ -109,30 +109,12 @@
 	                    <li><a href="#">Eaux</a></li>
 	                </ul>
 	            </li>
-	            <li>
-	                <a href="#sm_hygiene_beaute" data-toggle="collapse">
-	                    <img src="../img/sidebar_left/2415.jpg" style="border-radius: 8px; width: 30px;"> Hygiène & Beauté
-	                </a>
-	                <ul id="sm_hygiene_beaute" class="list-unstyled collapse">
-	                    <li><a href="#">Papier toilette, Mouchoirs et Cotons</a></li>
-	                    <li><a href="#">Le corps</a></li>
-	                    <li><a href="#">Les cheveux</a></li>
-	                    <li><a href="#">Hygiène dentaire</a></li>
-	                    <li><a href="#">Le visage</a></li>
-	                </ul>
-	            </li>
-	            <li>
-	                <a href="#sm_entretien_nettoyage" data-toggle="collapse">
-	                    <img src="../img/sidebar_left/2589.jpg" style="border-radius: 8px; width: 30px;"> Entretien & Nettoyage
-	                </a>
-	                <ul id="sm_entretien_nettoyage" class="list-unstyled collapse">
-	                    <li><a href="#">Lessives et Soin du linge</a></li>
-	                    <li><a href="#">Produits nettoyants</a></li>
-	                    <li><a href="#">Nettoyants vaisselle</a></li>
-	                    <li><a href="#">Désodo</a></li>
-	                </ul>
-	            </li>
 	        </ul>
+	        <footer class="aside-footer border-top p-2">
+	        	<button class="btn btn-light btn-block text-primary" data-toggle="skin">
+	        		<span class="d-compact-menu-none">Night mode</span> <i class="fas fa-moon ml-1"></i>
+	        	</button>
+	        </footer>
 	    </div>
 
 	    <div class="content p-4">
