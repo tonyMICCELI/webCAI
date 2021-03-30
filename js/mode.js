@@ -1,6 +1,9 @@
-$("#currentMod").html("<p>Test</p>");
-
-$(".dropdown-item").click(function(){
+$(".select-mod-livraison").click(function(){
     let mode = $(this).text();
-    $(".currentMod").html(mode);
+    $("#currentModLivraison").html(mode);
+});
+
+$(".select-mod-fct").click(function(){
+    let mode = $(this).text();
+    $("#currentModFonctionnement").html(mode);
 });
