@@ -6,14 +6,19 @@ header {
 body {
 
 }
+.btnSearch {
+	margin-left: 10px!important;
+}
 
 .form-inline {
   padding: 10px;
+  margin-left: 80px;
+  color : rgba(0, 10, 10 , 0.6);
 }
 
 .dropdown {
 	padding: 10px;
-	margin-left: 30px;
+	margin-left: 10px;
 		
 
 }
