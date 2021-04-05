@@ -1,9 +1,14 @@
-.saucisses {
+.boucherie1 {
 	position: relative;
 	left : 30%;
 }
 .merguez {
 	position : absolute;
-	top : 10%!important;
+	top : -800%;
+	left : 10%;
+}
+.chistora {
+	position : absolute;
+	top : -800%;
 	left : 30%;
 }
