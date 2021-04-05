@@ -45,6 +45,12 @@ body {
 .sidebar ul ul a {
   padding-left: 2.5rem;
 }
+.sidebar>ul.adding {
+    position:absolute;
+    left:0;
+    bottom:0;
+    margin-left: -25px;
+}
 .sidebar [data-toggle="collapse"] {
   position: relative;
 }

@@ -23,14 +23,14 @@
 	    <div class="sidebar sidebar-dark bg-dark toggled">
 	        <ul class="list-unstyled">
 	            <li>
-	                <a href="#sm_fruits_legumes" data-toggle="collapse" class="collapse" aria-expanded="false">
+	                <a href="#sm_fruits_legumes" data-toggle="collapse">
 	                    <img src="../img/sidebar_left/1882.jpg" style="border-radius: 8px; width: 30px;"> Fruits & Légumes
 	                </a>
 	                <ul id="sm_fruits_legumes" class="list-unstyled collapse">
-	                    <li><a href="#">Fruits</a></li>
-	                    <li><a href="#">Légumes</a></li>
-	                    <li><a href="#">Jus de Fruits & Légumes</a></li>
-	                    <li><a href="#">Fruits & Légumes secs</a></li>
+	                    <li><a href="#" onclick="addRayonToList('Fruits')">Fruits</a></li>
+	                    <li><a href="#" onclick="addRayonToList('Légumes')">Légumes</a></li>
+	                    <li><a href="#" onclick="addRayonToList('Jus de Fruits & Légumes')">Jus de Fruits & Légumes</a></li>
+	                    <li><a href="#" onclick="addRayonToList('Fruits & Légumes secs')">Fruits & Légumes secs</a></li>
 	                </ul>
 	            </li>
 	            <li>
@@ -110,17 +110,31 @@
 	                </ul>
 	            </li>
 	        </ul>
-	        <footer class="aside-footer border-top p-2">
-	        	<button class="btn btn-light btn-block text-primary" data-toggle="skin">
-	        		<span class="d-compact-menu-none">Night mode</span> <i class="fas fa-moon ml-1"></i>
-	        	</button>
+	        <footer id="listRayonSelected" class="border-top p-2">
+	        	<!-- <div class="alert alert-primary alert-dismissible fade show" role="alert">
+				  Something
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div> -->
 	        </footer>
 	    </div>
 
 	    <div class="content p-4">
-	        
+	        <!-- TODO: contains page web -->
 	    </div>
 	</div>
+
+	<script>
+		function addRayonToList(name) {
+			document.getElementById("listRayonSelected").innerHTML += "<div class=\"alert alert-primary alert-dismissible fade show\" role=\"alert\">"
+														  			  + name +
+														  			  "<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">"
+														    		  "<span aria-hidden=\"true\">&times;</span>"
+														  			  "</button>"
+																	  "</div>";
+		}
+	</script>
 
 	<!-- Install JavaScript of this page -->
 	<script src="../js/sidebar_left/jquery.min.js"></script>
