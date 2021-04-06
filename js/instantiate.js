@@ -28,3 +28,16 @@ $(".pizzaBtn").click(function(){
 $(".vinBtn").click(function(){
 	$(".cat-vin").toggle();
 });
+
+//Affichage de la catégorie sélectionnée
+$(".category").click(function(){
+	let nomCategory = $(this).text();
+	let template = `<div class="alert alert-primary alert-dismissible fade show" role="alert">
+						<h7></h7>
+				  		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    		<span aria-hidden="true">&times;</span>
+				  		</button>
+					</div`;
+	template = template.replace("<h7></h7>", "<h7>"+nomCategory+"</h7>");
+	$(".insert-rayon").append(template);
+});
