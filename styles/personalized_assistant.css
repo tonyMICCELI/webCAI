@@ -4,14 +4,29 @@
 	height:60px;
 	bottom:80px;
 	right:100px;
+	overflow: hidden;
 	background-color:#22F;
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
 	box-shadow: 2px 2px 3px #999;
+	cursor: pointer;
 }
 
 .my-float{
 	margin-top:15px;
 	margin-right: -2px;
+}
+
+.fixed-action-btn.horizontal {
+    padding: 0 0 0 15px;
+}
+
+.fixed-action-btn {
+    position: fixed;
+    right: 23px;
+    bottom: 23px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 998;
 }
