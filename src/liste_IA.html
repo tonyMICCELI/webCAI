@@ -17,11 +17,30 @@
 			<h6 class="display-4 liste-IA-title text-center">Liste de courses personalisée selon vos besoins</h6>
 			<p class="lead liste-IA-sutitle text-center">Voici les listes de produits que notre intelligence artificielle a crée pour vous, vous n'avez plus qu'à payer et recevoir vos courses</p>
 			<hr class="my-4">
-			<button type="button" class="btn btn-primary w-100 btn-liste-IA">3 jours</button>
-			<button type="button" class="btn btn-primary w-100 btn-liste-IA">1 semaine</button>
-			<button type="button" class="btn btn-primary w-100 btn-liste-IA">2 semaines</button>
-			<button type="button" class="btn btn-primary w-100 btn-liste-IA">3 semaines</button>
+			<button type="button" class="btn btn-primary w-100 btn-liste-IA" data-toggle="modal" data-target="#staticBackdrop">3 jours</button>
+			<button type="button" class="btn btn-primary w-100 btn-liste-IA" data-toggle="modal" data-target="#staticBackdrop">1 semaine</button>
+			<button type="button" class="btn btn-primary w-100 btn-liste-IA" data-toggle="modal" data-target="#staticBackdrop">2 semaines</button>
+			<button type="button" class="btn btn-primary w-100 btn-liste-IA" data-toggle="modal" data-target="#staticBackdrop">3 semaines</button>
 		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="staticBackdropLabel">A venir</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        Les listes de courses générés par l'Intelligence Artificielle seront bientôt disponibles.
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+	      </div>
+	    </div>
+	  </div>
 	</div>
 	<!-- Suggestions de produits par le magasin -->
 	<div class="d-flex justify-content-end">
