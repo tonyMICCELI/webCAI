@@ -1,0 +1,23 @@
+header {
+	color : rgba(0, 10, 10 , 0.6);
+	text-align: right;
+}
+
+body {
+
+}
+.btnSearch {
+	margin-left: 10px!important;
+}
+
+.form-inline {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.dropdown {
+	padding: 10px;
+	margin-left: 10px;
+		
+
+}
