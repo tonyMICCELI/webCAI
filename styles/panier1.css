@@ -4,3 +4,6 @@
 .popover .arrow {
 	display: none;
 }
+#popover_content_panier {
+	display: none;
+}

@@ -14,11 +14,19 @@
 <body>
 	<!-- Panier -->
 	<div class="d-flex justify-content-end">
-		<button href ="#" type="button" class="btn btn-primary" title="Panier" data-container="body" data-placement="bottom" data-toggle="popover" 
-		data-trigger="focus"data-html="true" rel="panier" data-content="<b>Contenu du panier :</b> ">
+		<button href ="#" type="button" class="btn btn-primary" title="Panier" data-container="body" data-placement="bottom" data-toggle="popover"  data-content='
+		<div><b>Contenu du panier :</b>
+		<a type="button" class="btn btn-primary">Payer</a></div>
+		' data-html="true" >
 			<!-- Icone -->
 			<i class="bi bi-basket-fill panier"></i>	
 		</button>
+	</div>
+	<div id="popover_content_panier">
+		<div class="popover-body">
+			<b>Contenu du panier :</b>
+			<button type="button" class="btn btn-primary">Primary</button> 
+		</div>
 	</div>
 	
 
