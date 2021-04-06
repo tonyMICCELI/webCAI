@@ -1,14 +1,27 @@
 .boucherie1 {
+	display: table-cell;
 	position: relative;
-	left : 30%;
 }
 .merguez {
 	position : absolute;
-	top : -800%;
-	left : 10%;
+	top : 11%;
+	left : 30%;
 }
 .chistora {
 	position : absolute;
-	top : -800%;
-	left : 30%;
+	top : 11%;
+	left : 40%;
+}
+.saucisses {
+	position : absolute;
+	top : 11%;
+	left : 50%;
+}
+.travers {
+	position : absolute;
+	top : 11%;
+	left : 60%;
+}
+.dropdown-menu {
+	min-width : 100px;
 }
