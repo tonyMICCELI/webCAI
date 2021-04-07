@@ -2,6 +2,7 @@
   min-width: 230px;
   max-width: 230px;
   transition: all 0.3s;
+  float: left;
 }
 
 .sidebar ul li a {
@@ -20,4 +21,22 @@
 
 li {
 	border: none;
+}
+
+.article-template {
+  float: right;
+  min-width: 16em;
+  max-width: 16em;
+}
+
+.card-header, .card-footer {
+  min-width: 15em;
+  max-width: 15em;
+}
+
+.card-body {
+  min-width: 15em;
+  max-width: 15em;
+  min-height: 10em;
+  max-height: 10em;
 }
