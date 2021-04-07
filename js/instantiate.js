@@ -12,23 +12,6 @@ for (var i = 0; i < articlesToAppend.length; i++) {
 	articlesToAppend[i].displayArticle(".insert-article");
 }
 
-//Affichage des articles par catégories
-$(".toggleArticles").click(function(){
-	$(".article-template").toggle();
-});
-$(".painBtn").click(function(){
-	$(".cat-pain").toggle();
-});
-$(".fromageBtn").click(function(){
-	$(".cat-fromage").toggle();
-});
-$(".pizzaBtn").click(function(){
-	$(".cat-pizza").toggle();
-});
-$(".vinBtn").click(function(){
-	$(".cat-vin").toggle();
-});
-
 //Liste pour stocker les catégories sélectionnées, afin d'éviter d'avoir plusieurs mêmes catégories dans la liste
 const categoryList = [];
 
@@ -45,6 +28,7 @@ function showSelectedRayons() {
 }
 
 function appendCategory(category) {
+	let removeClassToAdd = "rem-"+category.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s/g, "").replace(/\\|\//g,"").replace(/&/g,"");
 	//Définit le template de la catégorie sélectionnée, contient le nom et un bouton pour la retirer de la liste
 	let template = `<div class="alert alert-primary alert-dismissible fade show" role="alert">
 						<h7 class='categoryName'></h7>
@@ -52,7 +36,7 @@ function appendCategory(category) {
 				    		<span aria-hidden="true">&times;</span>
 				  		</button>
 					</div`;
-	template = template.replace("<h7 class='categoryName'></h7>", "<h7 class='categoryName'>"+category+"</h7>");
+	template = template.replace("<h7 class='categoryName'></h7>", "<h7 class='categoryName'>"+category+"</h7>").replace("close removeArticleCategory", "close "+removeClassToAdd+" removeArticleCategory");
 	$(".insert-rayon").append(template);
 	showSelectedRayons();
 }
@@ -66,6 +50,8 @@ $(document).on("click", ".category", function() {
 		categoryList.push(nomCategory);
 		//On affiche la catégorie sur le site Web
 		appendCategory(nomCategory);
+		//On ferme le sous-menu rayon
+		$('.collapse').collapse('hide');
 	}
 });
 
@@ -80,4 +66,68 @@ $(document).on("click", ".removeArticleCategory", function() {
 	}
 	//On rajoute un petit délai avant l'appel de la fonction pour attendre l'animation de suppression de catégorie
 	setTimeout(function() { showSelectedRayons(); }, 150);
+});
+
+//Affichage des articles lors du click sur la catégorie associée
+$(document).on("click", ".sel-pain", function() {
+	$(".cat-pain").show();
+});
+$(document).on("click", ".sel-patisserie", function() {
+	$(".cat-patisserie").show();
+});
+$(document).on("click", ".sel-dessert", function() {
+	$(".cat-dessert").show();
+});
+$(document).on("click", ".sel-fromage", function() {
+	$(".cat-fromage").show();
+});
+$(document).on("click", ".sel-pizza", function() {
+	$(".cat-pizza").show();
+});
+$(document).on("click", ".sel-surgel", function() {
+	$(".cat-surgel").show();
+});
+$(document).on("click", ".sel-feculent", function() {
+	$(".cat-feculent").show();
+});
+$(document).on("click", ".sel-condiment", function() {
+	$(".cat-condiment").show();
+});
+$(document).on("click", ".sel-vin", function() {
+	$(".cat-vin").show();
+});
+$(document).on("click", ".sel-soda", function() {
+	$(".cat-soda").show();
+});
+
+//Retire les articles associés à la catégorie que l'on retire lors du click sur le bouton retrait catégorie
+$(document).on("click", ".rem-pains", function() {
+	$(".cat-pain").hide();
+});
+$(document).on("click", ".rem-patisseries", function() {
+	$(".cat-patisserie").hide();
+});
+$(document).on("click", ".rem-yaourtsdesserts", function() {
+	$(".cat-dessert").hide();
+});
+$(document).on("click", ".rem-fromages", function() {
+	$(".cat-fromage").hide();
+});
+$(document).on("click", ".rem-pizzas", function() {
+	$(".cat-pizza").hide();
+});
+$(document).on("click", ".rem-platsprepares", function() {
+	$(".cat-surgel").hide();
+});
+$(document).on("click", ".rem-feculents", function() {
+	$(".cat-feculent").hide();
+});
+$(document).on("click", ".rem-condiments", function() {
+	$(".cat-condiment").hide();
+});
+$(document).on("click", ".rem-vinsspiritueux", function() {
+	$(".cat-vin").hide();
+});
+$(document).on("click", ".rem-sodas", function() {
+	$(".cat-soda").hide();
 });
