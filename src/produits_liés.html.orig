@@ -11,26 +11,27 @@
 	<title>Index</title>
 </head>
 <body>
-
-	<section aria-label="Main content" role="main" class="product-detail">
-		<div itemscope itemtype="http://schema.org/Product">
-			<div class="shadow">
-				<div class="_cont detail-top">
-					<div class="cols">
-						<div class="left-col">
-							<div class="thumbs">
-								<a class="thumb-image active" href="#" data-index="0">
-									<span><img src="/" alt="Picture1"></span>
-								</a>
-								<a class="thumb-image active" href="#" data-index="1">
-									<span><img src="/" alt="Picture2"></span>
-								</a>
-								<a class="thumb-image active" href="#" data-index="2">
-									<span><img src="/" alt="Picture3"></span>
-								</a>
-								<a class="thumb-image active" href="#" data-index="3">
-									<span><img src="/" alt="Picture4"></span>
-								</a>
+<<<<<<< HEAD
+=======
+	<!-- Produits achetés régulièrement avec -->
+	<div class="d-flex justify-content-center">
+		<div class="jumbotron w-50 produits-lies-jumbotron ">
+			<h6 class="display-4 produits-lies-title text-center">Vous achetez régulièrement avec :</h6>
+			<p class="produits-lies-subtitle lead text-center">Voici la listes des produits que vous achetez le plus souvent avec cet article</p>
+			<hr class="my-4">
+			<div class="container">
+		  		<div class="row">
+		    		<div class="col-sm">
+			      		<div class="card w-100" >
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">Go somewhere</a>
+						  </div>
+						</div>
+		    		</div>
+		    		<div class="col-sm">
+			      		<div class="card w-100" >
 						  <div class="card-body">
 						    <h5 class="card-title">Card title</h5>
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -56,6 +57,62 @@
 		<div class="jumbotron w-50 produits-lies-jumbotron ">
 			<h6 class="display-4 produits-lies-title text-center">Produits liés :</h6>
 			<p class="produits-lies-subtitle lead text-center">Voici la listes des produits en rapport avec cet article</p>
+			<hr class="my-4">
+			<div class="container">
+		  		<div class="row">
+		    		<div class="col-sm">
+			      		<div class="card w-100" >
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">Go somewhere</a>
+						  </div>
+						</div>
+		    		</div>
+		    		<div class="col-sm">
+			      		<div class="card w-100" >
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">Go somewhere</a>
+						  </div>
+						</div>
+		    		</div>
+		    		<div class="col-sm">
+			      		<div class="card w-100" >
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">Go somewhere</a>
+						  </div>
+						</div>
+		    		</div>
+		  		</div>
+			</div>	
+		</div>
+	</div>
+
+>>>>>>> a8178abe1e6115e1ae364cba1cbd4aad381d357a
+
+	<section aria-label="Main content" role="main" class="product-detail">
+		<div itemscope itemtype="http://schema.org/Product">
+			<div class="shadow">
+				<div class="_cont detail-top">
+					<div class="cols">
+						<div class="left-col">
+							<div class="thumbs">
+								<a class="thumb-image active" href="#" data-index="0">
+									<span><img src="/" alt="Picture1"></span>
+								</a>
+								<a class="thumb-image active" href="#" data-index="1">
+									<span><img src="/" alt="Picture2"></span>
+								</a>
+								<a class="thumb-image active" href="#" data-index="2">
+									<span><img src="/" alt="Picture3"></span>
+								</a>
+								<a class="thumb-image active" href="#" data-index="3">
+									<span><img src="/" alt="Picture4"></span>
+								</a>
 							</div>
 							<div class="big">
 								<span id="big-image" class="img" quickbeam="image" style="background-image: url('/')" data-src="/"></span>
