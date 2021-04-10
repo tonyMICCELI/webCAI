@@ -1,0 +1,42 @@
+.sidebar {
+  min-width: 230px;
+  max-width: 230px;
+  transition: all 0.3s;
+  float: left;
+}
+
+.sidebar ul li a {
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+}
+
+.sidebar>ul.adding {
+    position:absolute;
+    left:0;
+    bottom:0;
+    margin-left: -25px;
+}
+
+li {
+	border: none;
+}
+
+.article-template {
+  float: right;
+  min-width: 16em;
+  max-width: 16em;
+}
+
+.card-header, .card-footer {
+  min-width: 15em;
+  max-width: 15em;
+}
+
+.card-body {
+  min-width: 15em;
+  max-width: 15em;
+  min-height: 10em;
+  max-height: 10em;
+}

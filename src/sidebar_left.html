@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<!-- Bootstrap icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <!-- SideBar left CSS -->
+    <link rel="stylesheet" href="../styles/sidebar_left/sidebar_left.min.css">
+	<title>SidebarLeft - Fast & Courses</title>
+</head>
+<body class="bg-light">
+
+	<nav class="navbar navbar-expand navbar-dark bg-primary">
+	    <a class="sidebar-toggle mr-3" href="#"><i class="bi bi-list"></i></a>
+	    <a class="navbar-brand" href="#">Fast & Courses</a>
+	</nav>
+
+    <div class="d-flex">
+	    <div class="sidebar sidebar-dark bg-dark toggled">
+	        <ul class="list-unstyled">
+	            <li>
+	                <a href="#sm_fruits_legumes" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/1882.jpg" style="border-radius: 8px; width: 30px;"> Fruits & Légumes
+	                </a>
+	                <ul id="sm_fruits_legumes" class="list-unstyled collapse">
+	                    <li><a href="#" onclick="addRayonToList('Fruits')">Fruits</a></li>
+	                    <li><a href="#" onclick="addRayonToList('Légumes')">Légumes</a></li>
+	                    <li><a href="#" onclick="addRayonToList('Jus de Fruits & Légumes')">Jus de Fruits & Légumes</a></li>
+	                    <li><a href="#" onclick="addRayonToList('Fruits & Légumes secs')">Fruits & Légumes secs</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_viande_poisson" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/1921.jpg" style="border-radius: 8px; width: 30px;"> Viandes & Poissons
+	                </a>
+	                <ul id="sm_viande_poisson" class="list-unstyled collapse">
+	                    <li><a href="#">Boucherie</a></li>
+	                    <li><a href="#">Volaille</a></li>
+	                    <li><a href="#">Poissonnerie</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_pains_patisseries" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/1952.jpg" style="border-radius: 8px; width: 30px;"> Pains & Pâtisseries
+	                </a>
+	                <ul id="sm_pains_patisseries" class="list-unstyled collapse">
+	                    <li><a href="#">Pains</a></li>
+	                    <li><a href="#">Pâtisseries</a></li>
+	                    <li><a href="#">Vienoiseries et Brioches</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_frais" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/28127.jpg" style="border-radius: 8px; width: 30px;"> Frais
+	                </a>
+	                <ul id="sm_frais" class="list-unstyled collapse">
+	                    <li><a href="#">Crèmerie</a></li>
+	                    <li><a href="#">Yaourts et Desserts</a></li>
+	                    <li><a href="#">Fromages</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_surgeles" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/2074.jpg" style="border-radius: 8px; width: 30px;"> Surgelés
+	                </a>
+	                <ul id="sm_surgeles" class="list-unstyled collapse">
+	                    <li><a href="#">Plats cuisinés</a></li>
+	                    <li><a href="#">Pizzas, Quiches et Tartes</a></li>
+	                    <li><a href="#">Viandes</a></li>
+	                    <li><a href="#">Poissons et Fruits de mer</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_epicerie_salee" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/2112.jpg" style="border-radius: 8px; width: 30px;"> Epicerie salée
+	                </a>
+	                <ul id="sm_epicerie_salee" class="list-unstyled collapse">
+	                    <li><a href="#">Pâtes, Riz et Féculents</a></li>
+	                    <li><a href="#">Huiles, Vinaigres et Vinaigrettes</a></li>
+	                    <li><a href="#">Sauce et Condiments</a></li>
+	                    <li><a href="#">Sel, Epices et Bouillons</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_epicerie_sucree" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/2183.jpg" style="border-radius: 8px; width: 30px;"> Epicerie sucrée
+	                </a>
+	                <ul id="sm_epicerie_sucree" class="list-unstyled collapse">
+	                    <li><a href="#">Boissons Chaudes</a></li>
+	                    <li><a href="#">Petit déjeuner</a></li>
+	                    <li><a href="#">Biscuits et Gâteaux</a></li>
+	                    <li><a href="#">Chocolats et Bonbons</a></li>
+	                    <li><a href="#">Sucres et Farines</a></li>
+	                </ul>
+	            </li>
+	            <li>
+	                <a href="#sm_boissons" data-toggle="collapse">
+	                    <img src="../img/sidebar_left/27070.jpg" style="border-radius: 8px; width: 30px;"> Boissons
+	                </a>
+	                <ul id="sm_boissons" class="list-unstyled collapse">
+	                    <li><a href="#">Cave à vins</a></li>
+	                    <li><a href="#">Champagnes et Pétillants</a></li>
+	                    <li><a href="#">Bières et Cidres</a></li>
+	                    <li><a href="#">Colas, Thés glacés et Softs</a></li>
+	                    <li><a href="#">Eaux</a></li>
+	                </ul>
+	            </li>
+	        </ul>
+	        <footer id="listRayonSelected" class="border-top p-2">
+	        	<!-- <div class="alert alert-primary alert-dismissible fade show" role="alert">
+				  Something
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div> -->
+	        </footer>
+	    </div>
+
+	    <div class="content p-4">
+	        <!-- TODO: contains page web -->
+	    </div>
+	</div>
+
+	<script>
+		function addRayonToList(name) {
+			document.getElementById("listRayonSelected").innerHTML += "<div class=\"alert alert-primary alert-dismissible fade show\" role=\"alert\">"
+														  			  + name +
+														  			  "<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">"
+														    		  "<span aria-hidden=\"true\">&times;</span>"
+														  			  "</button>"
+																	  "</div>";
+		}
+	</script>
+
+	<!-- Install JavaScript of this page -->
+	<script src="../js/sidebar_left/jquery.min.js"></script>
+	<script src="../js/sidebar_left/bootadmin.min.js"></script>
+
+	<!-- Install jQuery 3.5.1 -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<!-- Install Bootstrap 4.6 bundled with popper.js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

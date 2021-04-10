@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/rayons.css">
+	<title>Index</title>
+</head>
+<body>
+    <div class="sidebar bg-dark rounded border" id="sidebar-wrapper">
+
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col">
+                    <h6 class="text-light toggleOnSelect" style="display: none;">Rayons sélectionnés</h6>
+                    <div class="insert-rayon"></div> 
+                </div>
+            </div>
+        </div>
+
+        <hr class="bg-light toggleOnSelect" style="display: none;">
+
+    	<div class="container">
+        	<div class="row">
+        		<div class="col sidebar-heading">
+        			<h6 class="text-light">Rayons du magasin</h6> 
+        		</div>
+        	</div>
+        </div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse1">
+            	<img src="../img/sidebar_left/1882.jpg" style="border-radius: 8px; width: 30px;"> Fruits & Légumes
+            </a>
+                <ul class="collapse" id="collapse1">
+  					<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Fruits</a></li>
+  					<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Légumes</a></li>
+  					<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Jus Fruits/Légumes</a></li>
+  					<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Fruits & Légumes secs </a></li>
+				</ul>
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse2">
+            	<img src="../img/sidebar_left/1921.jpg" style="border-radius: 8px; width: 30px;"> Viandes & Poissons
+            </a>
+                <ul class="collapse" id="collapse2">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Viandes</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Volaille</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Poissonnerie</a></li>
+				</ul>
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse3">
+            	<img src="../img/sidebar_left/1952.jpg" style="border-radius: 8px; width: 30px;"> Pains & Patisseries
+            </a>
+                <ul class="collapse" id="collapse3">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-pain" href="#">Pains</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-patisserie" href="#">Pâtisseries</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Viennoiseries</a></li>
+				</ul>
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse4">
+            	<img src="../img/sidebar_left/28127.jpg" style="border-radius: 8px; width: 30px;"> Frais
+            </a>
+                <ul class="collapse" id="collapse4">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Crèmerie</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-dessert" href="#">Yaourts & Desserts</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-fromage" href="#">Fromages</a></li>                	
+				</ul>
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse5">
+            	<img src="../img/sidebar_left/2074.jpg" style="border-radius: 8px; width: 30px;"> Surgelés
+            </a>
+                <ul class="collapse" id="collapse5">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-surgel" href="#">Plats préparés</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-pizza" href="#">Pizzas</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Traiteur</a></li> 
+				</ul>
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse6">
+            	<img src="../img/sidebar_left/2112.jpg" style="border-radius: 8px; width: 30px;"> Epicerie salée
+            </a>
+                <ul class="collapse" id="collapse6">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-feculent" href="#">Féculents</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-condiment" href="#">Condiments</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Huiles & Vinaigres</a></li> 
+				</ul>
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse7">
+            	<img src="../img/sidebar_left/2183.jpg" style="border-radius: 8px; width: 30px;"> Epicerie sucrée
+            </a>
+                <ul class="collapse" id="collapse7">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Petit-déjeuner</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Biscuits & Gâteaux</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Chocolats & Bonbons</a></li> 
+				</ul>            
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse8">
+            	<img src="../img/sidebar_left/27070.jpg" style="border-radius: 8px; width: 30px;"> Boissons
+            </a>
+                <ul class="collapse" id="collapse8">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Eaux</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-vin" href="#">Vins & Spiritueux</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-soda" href="#">Sodas</a></li> 
+				</ul>  
+        </div>
+    </div>
+
+    <!-- Zone d'affichage des articles à modifier -->
+    <div class="insert-article row">
+        
+    </div>
+
+	<!-- Install jQuery 3.5.1 -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<!-- Install Bootstrap 4.6 bundled with popper.js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+	<script src="../js/article.js"></script>
+	<script src="../js/instantiate.js"></script>
+</body>
+</html>

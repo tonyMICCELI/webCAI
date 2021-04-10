@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+	<title>Index</title>
+</head>
+<body>
+	<div class="d-flex justify-content-end">
+		<div class="card" style="width: 15rem;">
+	  		<h6 class="card-header">Mode de livraison actuel : <span class="badge badge-info" id="currentModLivraison">Scooter</span></h6>
+	  		<div class="card-body">
+	    		<!-- <p class="card-text">Vous pouvez changer le mode de livraison à tout moment.</p> -->
+	    		<div class="dropdown">
+	  				<button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    		Choix du mode
+	  				</button>
+	  				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	    				<p class="dropdown-item select-mod-livraison" href="#">Scooter</p>
+	    				<p class="dropdown-item select-mod-livraison" href="#">Utilitaire</p>
+	    				<p class="dropdown-item select-mod-livraison" href="#">Drône</p>
+	    				<p class="dropdown-item select-mod-livraison" href="#">Retrait magasin</p>
+	    				<p class="dropdown-item select-mod-livraison" href="#">Energie douce</p>
+	  				</div>
+				</div>
+	  		</div>
+		</div>
+	</div>
+
+	<div class="d-flex justify-content-end">
+		<div class="card" style="width: 15rem;">
+	  		<h6 class="card-header">Mode de fonctionnement : <span class="badge badge-info" id="currentModFonctionnement">Classique</span></h6>
+	  		<div class="card-body">
+	    		<!-- <p class="card-text">Vous pouvez changer le mode de fonctionnement à tout moment.</p> -->
+	    		<div class="dropdown">
+	  				<button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    		Choix du mode
+	  				</button>
+	  				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	    				<p class="dropdown-item select-mod-fct" href="#">Classique</p>
+	    				<p class="dropdown-item select-mod-fct" href="#">Lunettes connectées</p>
+	    				<p class="dropdown-item select-mod-fct" href="#">Puce pensée</p>
+	    				<p class="dropdown-item select-mod-fct" href="#">Holographique</p>
+	    				<p class="dropdown-item select-mod-fct" href="#">Mur interactif</p>
+	  				</div>
+				</div>
+	  		</div>
+		</div>
+	</div>
+
+	<!-- Install jQuery 3.5.1 -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<!-- Install Bootstrap 4.6 bundled with popper.js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+	<script src="../js/mode.js"></script>
+</body>
+</html>
