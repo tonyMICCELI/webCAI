@@ -29,14 +29,12 @@ li {
   max-width: 16em;
 }
 
-.card-header, .card-footer {
-  min-width: 15em;
-  max-width: 15em;
-}
-
-.card-body {
-  min-width: 15em;
-  max-width: 15em;
+.modHeight {
   min-height: 15em;
   max-height: 15em;
+}
+
+.modWidth {
+  min-width: 15em;
+  max-width: 15em;
 }
