@@ -6,19 +6,19 @@
 
 
 
-// Load the navigation menu when starting the DOCUMENT
-$(document).ready(function() {
-  // Handler for .ready() called.
-  var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-	    if (this.readyState == 4 && this.status == 200) {
-	      document.getElementById("mainContainer").innerHTML =
-	      this.responseText;
-    	}
-    }
-     xhttp.open("GET", "http://localhost:7800/src/main_menu.html");
-     xhttp.send();
-});
+// // Load the navigation menu when starting the DOCUMENT
+// $(document).ready(function() {
+//   // Handler for .ready() called.
+//   var xhttp = new XMLHttpRequest();
+// 	xhttp.onreadystatechange = function() {
+// 	    if (this.readyState == 4 && this.status == 200) {
+// 	      document.getElementById("mainContainer").innerHTML =
+// 	      this.responseText;
+//     	}
+//     }
+//      xhttp.open("GET", "http://localhost:7800/src/main_menu.html");
+//      xhttp.send();
+// });
 
 
 
@@ -68,6 +68,23 @@ $(document).on("click", ".btnDelivery", function() {
      xhttp.open("GET", "http://localhost:7800/src/delivery.html");
  	 xhttp.send();
 });
+
+
+
+// REFRESH THE WHOLE PAGE
+$(document).on("click", ".btnFullPage", function() {
+	console.log("Ask for a page");
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	    	document.body.innerHTML = this.responseText;
+    	}
+    }
+     xhttp.open("GET", "http://localhost:7800/src/ajax_request.html");
+     xhttp.send();
+
+});
+
 
 
 $(document).on("click", "#btnBuy", function() {
