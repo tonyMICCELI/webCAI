@@ -8,7 +8,12 @@ class Article {
 		this._categorie = categorie;
 		this._template = `<div class="col-2 article-template" style="display: none;">
         					<div class="card card-header">
-        						<h5>Default</h5>
+								<div class="container-fluid p-0 m-0">
+								  <div class="text-center">
+								    <h5 class='d-inline'>Default</h5>
+								    <button class="d-inline float-right btn btn-primary">+</button>
+								  </div>
+								</div>
         					</div>
             				<div class="card card-body">
   								<img src="../img/default.png" class="card-img-top" alt="...">
@@ -26,7 +31,7 @@ class Article {
 	//Gestion du template selon les différents attributs de l'objet
 	updateTemplate() {
 		const templateToChange = this._template;
-		const templateChanged = templateToChange.replace("<h5>Default</h5>", "<h5>"+this._nom+"</h5>").replace(">1€</h5>", ">"+this._prix+"</h5>").replace(">3Kg</h6>", ">"+this._quantite+"</h6>").replace("../img/default.png", this._image).replace("col-2 article-template", "col-2 article-template "+this._categorie);
+		const templateChanged = templateToChange.replace("<h5 class='d-inline'>Default</h5>", "<h5 class='d-inline'>"+this._nom+"</h5>").replace(">1€</h5>", ">"+this._prix+"</h5>").replace(">3Kg</h6>", ">"+this._quantite+"</h6>").replace("../img/default.png", this._image).replace("col-2 article-template", "col-2 article-template "+this._categorie);
 		this._template = templateChanged;
 	}
 
