@@ -11,7 +11,7 @@ class Article {
 								<div class="container-fluid p-0 m-0">
 								  <div class="text-center">
 								    <h5 class='d-inline'>Default</h5>
-								    <button class="d-inline float-right btn btn-primary">+</button>
+								    <button class="d-inline float-right btn btn-primary btnFicheArticle">+</button>
 								  </div>
 								</div>
         					</div>

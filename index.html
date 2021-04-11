@@ -7,6 +7,9 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
 
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
 	<link rel="stylesheet" type="text/css" href="styles/footer.css"/>
@@ -14,8 +17,11 @@
     <link rel="stylesheet" type="text/css" href="styles/modes.css">
 	<link rel="stylesheet" type="text/css" href="styles/panier1.css"/>
 	<link rel="stylesheet" type="text/css" href="styles/liste_IA.css"/>
-	<link rel="stylesheet" href="styles/personalized_assistant.css">
+	<link rel="stylesheet" type="text/css" href="styles/personalized_assistant.css">
 	<link rel="stylesheet" type="text/css" href="styles/boucherie.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/map.css">
+	<link rel="stylesheet" type="text/css" href="styles/historique_commande.css">
+
 	<!-- <link rel="stylesheet" type="text/css" href="styles/produits-lies.css"/> -->
 
 	<title>Courses Pursuit</title>
@@ -25,7 +31,7 @@
 	<!-- Header -->
 	<div class ="header">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-info">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" id="btnMainMenu">
 			    <img src="img/logo.jpg" width="55" height="30" class="d-inline-block align-top" alt="">
 			    Courses Pursuit
   			</a>
@@ -53,8 +59,8 @@
 	<!-- Panier -->
 	<div class="choix-modes" style="max-width : 14rem;">
 		<div class="d-flex justify-content-end">
-			<button href ="#" type="button" class="btn btn-primary" title="Panier" data-container="body" data-placement="bottom" data-toggle="popover" 
-			data-trigger="focus"data-html="true" rel="panier" data-content="<b>Contenu du panier :</b> ">
+			<button type="button" class="btn btn-primary" id="btnPanier" title="Panier" data-container="body" data-placement="bottom" data-toggle="popover" 
+			data-trigger="focus" data-html="true" rel="panier" data-content="<b>Contenu du panier :</b> ">
 				<!-- Icone -->
 				<i class="bi bi-basket-fill panier"></i>	
 			</button>
@@ -206,7 +212,7 @@
             	<img src="img/sidebar_left/1921.jpg" style="border-radius: 8px; width: 30px;"> Viandes & Poissons
             </a>
                 <ul class="collapse" id="collapse2">
-                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Viandes</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" id="btnBoucherie" data-toggle="collapse"><a class="category" href="#">Viandes</a></li>
                 	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Volaille</a></li>
                 	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Poissonnerie</a></li>
 				</ul>
@@ -263,8 +269,8 @@
 
     <!-- Zone d'affichage des articles à modifier -->
     <div class="insert-article row">
-        
     </div>
+
 
 	<!-- Footer -->
 	<footer id="footer">
@@ -293,8 +299,18 @@
 	<script src="js/mode.js"></script>
 	<script src="js/article.js"></script>
 	<script src="js/instantiate.js"></script>
-	<script src= "js/panier.js"></script>
+	<script src="js/panier.js"></script>
     <script src="js/personalized_assistant.js"></script>
+    <script src="js/navigation.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" 	crossorigin=""></script>
+
+    <!-- Ces deux balises script sont à insérer entre les deux balises existantes -->
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+
+
 
 </body>
 </html>

@@ -1,9 +1,11 @@
-$(".select-mod-livraison").click(function(){
-    let mode = $(this).text();
+
+$(document).on("click", ".select-mod-livraison", function() {
+ 	let mode = $(this).text();
     $("#currentModLivraison").html(mode);
 });
 
-$(".select-mod-fct").click(function(){
-    let mode = $(this).text();
+$(document).on("click", ".select-mod-fct", function() {
+ 	let mode = $(this).text();
     $("#currentModFonctionnement").html(mode);
 });
+
