@@ -6,11 +6,14 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
 	<link rel="stylesheet" type="text/css" href="styles/footer.css"/>
     <link rel="stylesheet" type="text/css" href="styles/rayons.css">
     <link rel="stylesheet" type="text/css" href="styles/modes.css">
+	<link rel="stylesheet" type="text/css" href="styles/panier1.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/liste_IA.css"/>
 
 	<title>Courses Pursuit</title>
 </head>
@@ -44,8 +47,18 @@
 		</nav>
 	</div>
 
+	<!-- Panier -->
+	<div class="choix-modes" style="max-width : 14rem;">
+		<div class="d-flex justify-content-end">
+			<button href ="#" type="button" class="btn btn-primary" title="Panier" data-container="body" data-placement="bottom" data-toggle="popover" 
+			data-trigger="focus"data-html="true" rel="panier" data-content="<b>Contenu du panier :</b> ">
+				<!-- Icone -->
+				<i class="bi bi-basket-fill panier"></i>	
+			</button>
+		</div>
+	
+
 	<!-- Choix des modes -->
-	<div class="choix-modes" style="width: 14rem;">
 		<div class="d-flex justify-content-end">
 			<div class="card">
 		  		<h6 class="card-header">Mode de livraison actuel : <span class="badge badge-info" id="currentModLivraison">Scooter</span></h6>
@@ -85,10 +98,50 @@
 		  		</div>
 			</div>
 		</div>
+	<!-- Listes de courses personnalisées -->
+		<div class="d-flex justify-content-end" style="max-width : 14rem;">
+			<div class="jumbotron" style=" margin-bottom : 2px;">
+				<h6 class="display-4 liste-IA-title text-center">Liste de courses personalisée selon vos besoins</h6>
+				<p class="lead liste-IA-sutitle text-center">Voici les listes de produits que notre intelligence artificielle a crée pour vous, vous n'avez plus qu'à payer et recevoir vos courses</p>
+				<hr class="my-4">
+				<button type="button" class="btn btn-primary w-100 btn-liste-IA" data-toggle="modal" data-target="#staticBackdrop">3 jours</button>
+				<button type="button" class="btn btn-primary w-100 btn-liste-IA" data-toggle="modal" data-target="#staticBackdrop">1 semaine</button>
+				<button type="button" class="btn btn-primary w-100 btn-liste-IA" data-toggle="modal" data-target="#staticBackdrop">2 semaines</button>
+				<button type="button" class="btn btn-primary w-100 btn-liste-IA" data-toggle="modal" data-target="#staticBackdrop">3 semaines</button>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="staticBackdropLabel">A venir</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        Les listes de courses générés par l'Intelligence Artificielle seront bientôt disponibles.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Suggestions de produits par le magasin -->
+		<div class="d-flex justify-content-end" style="max-width : 14rem;">
+			<div class="jumbotron" style=" margin-bottom : 55px;">
+				<h6 class="display-4 liste-IA-title text-center">Suggestions du magasin</h6>
+				<p class="lead liste-IA-sutitle text-center">Voici la listes des produits susceptibles de vous intéresser, que notre intelligence artificielle a trouvé pour vous</p>
+				<hr class="my-4">
+			</div>
+		</div>
 	</div>
 
+
 	<!-- Affichage des rayons -->
-    <div class="sidebar bg-dark rounded border" id="sidebar-wrapper">
+    <div class="sidebar bg-dark rounded border" id="sidebar-wrapper" style=" margin-bottom : 55px;">
 
         <div class="container">
             <div class="row pt-3">
@@ -209,6 +262,7 @@
 	<script src="js/mode.js"></script>
 	<script src="js/article.js"></script>
 	<script src="js/instantiate.js"></script>
+	<script src= "js/panier.js"></script>
 
 </body>
 </html>
