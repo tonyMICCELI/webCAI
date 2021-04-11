@@ -28,7 +28,7 @@
     bottom: 23px;
     padding-top: 15px;
     margin-bottom: 0;
-    z-index: 998;
+    z-index: 99999999;
 }
 
 .fixed-action-chatbox {
@@ -37,7 +37,7 @@
     bottom: 130px;
     padding-top: 15px;
     margin-bottom: 0;
-    z-index: 997;
+    z-index: 99999999;
 }
 
 .mytext{
@@ -78,9 +78,10 @@
 .frame{
     background:#e0e0de;
     height:350px;
-    width: 300px;
+    width: 350px;
     overflow:hidden;
     padding:0;
+    max-width: 200px;
 }
 .frame > div:last-of-type{
     position:absolute;bottom:0;width:100%;display:flex;
