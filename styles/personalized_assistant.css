@@ -1,4 +1,4 @@
-.float{
+.float {
 	position:fixed;
 	width:60px;
 	height:60px;
@@ -13,7 +13,7 @@
 	cursor: pointer;
 }
 
-.my-float{
+.my-float {
 	margin-top:15px;
 	margin-right: -2px;
 }
@@ -29,6 +29,15 @@
     padding-top: 15px;
     margin-bottom: 0;
     z-index: 998;
+}
+
+.fixed-action-chatbox {
+    position: fixed;
+    right: 100px;
+    bottom: 130px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
 }
 
 .mytext{
@@ -68,7 +77,8 @@
 }
 .frame{
     background:#e0e0de;
-    height:450px;
+    height:350px;
+    width: 300px;
     overflow:hidden;
     padding:0;
 }
