@@ -6,20 +6,6 @@
 
 
 
-// // Load the navigation menu when starting the DOCUMENT
-// $(document).ready(function() {
-//   // Handler for .ready() called.
-//   var xhttp = new XMLHttpRequest();
-// 	xhttp.onreadystatechange = function() {
-// 	    if (this.readyState == 4 && this.status == 200) {
-// 	      document.getElementById("mainContainer").innerHTML =
-// 	      this.responseText;
-//     	}
-//     }
-//      xhttp.open("GET", "http://localhost:7800/src/main_menu.html");
-//      xhttp.send();
-// });
-
 
 
 // /!\ : on utilise $(document).on("click", ".btnPanier", function() et PAS (.btnPanier).click()
