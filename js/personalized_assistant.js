@@ -72,12 +72,18 @@ $('body > div > div > div:nth-child(2) > span').click(function(){
 resetChat();
 
 //-- Print Messages
-insertChat("me", "Hello Tom...", 0);  
-insertChat("you", "Hi, Pablo", 1500);
-insertChat("me", "What would you like to talk about today?", 3500);
-insertChat("you", "Tell me a joke",7000);
-insertChat("me", "Spaceman: Computer! Computer! Do we bring battery?!", 9500);
-insertChat("you", "LOL", 12000);
+insertChat("me", "Bonjour je suis l'assistant personnalisé, je peux vous aider et vous guider dans vos choix. Pour continuer, posez moi n'importe quel question et je vous répondrez ;)", 0);
+insertChat("you", "Bonjour, je recherche du fromage de qualité.", 1500);
+insertChat("me", "Pas de soucis, je vous redirige vers ce que vous voulez...", 3500);
+insertChat("you", "Merci",7000);
 
-
+// Event about Personalized Assistant button
+$("#buttonPersonalizedAssistant").click(function () {
+    if($("#chatBoxDiv").is(":visible")) {
+        $("#chatBoxDiv").css("display", "none");
+    }
+    else {
+        $("#chatBoxDiv").css("display", "block");
+    }
+});
 //-- NOTE: No use time on insertChat.
