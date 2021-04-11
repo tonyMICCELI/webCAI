@@ -6,7 +6,7 @@ class Article {
 		this._quantite = quantite;
 		this._image = image;
 		this._categorie = categorie;
-		this._template = `<div class="col-2 article-template" style="display: none;">
+		this._template = `<div class="col-2 article-template border rounded" style="display: none;">
         					<div class="card card-header">
 								<div class="container-fluid p-0 m-0">
 								  <div class="text-center">
