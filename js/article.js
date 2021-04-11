@@ -7,7 +7,7 @@ class Article {
 		this._image = image;
 		this._categorie = categorie;
 		this._template = `<div class="col-2 article-template border rounded" style="display: none;">
-        					<div class="card card-header">
+        					<div class="card card-header modWidth">
 								<div class="container-fluid p-0 m-0">
 								  <div class="text-center">
 								    <h5 class='d-inline'>Default</h5>
@@ -15,10 +15,10 @@ class Article {
 								  </div>
 								</div>
         					</div>
-            				<div class="card card-body">
+            				<div class="card card-body modWidth modHeight">
   								<img src="../img/default.png" class="card-img-top" alt="...">
             				</div>
-            				<div class="card card-footer">
+            				<div class="card card-footer modWidth">
             					<div class="d-flex flex-md-row flex-column justify-content-between text-center">
             						<h5 class="card-text">1€</h5>
             						<h6 class="card-text">3Kg</h6>
