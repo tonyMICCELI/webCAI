@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+	<link rel="stylesheet" type="text/css" href="../styles/header.css">
+	<link rel="stylesheet" type="text/css" href="../styles/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/rayons.css">
+    <link rel="stylesheet" type="text/css" href="../styles/modes.css">
+	<link rel="stylesheet" type="text/css" href="../styles/panier1.css"/>
+	<link rel="stylesheet" type="text/css" href="../styles/liste_IA.css"/>
+	<link rel="stylesheet" href="../styles/personalized_assistant.css">
+	<link rel="stylesheet" type="text/css" href="../styles/boucherie.css"/>
+
+	<title>Courses Pursuit</title>
+</head>
+<body>
+
+	<!-- Header -->
+	<div class ="header">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+			<a class="navbar-brand" href="#">
+			    <img src="../img/logo.jpg" width="55" height="30" class="d-inline-block align-top" alt="">
+			    Courses Pursuit
+  			</a>
+
+		<div class="d-flex w-100 justify-content-end">
+
+			<form class="d-flex justify-content-end form-inline w-75">  <!--my-2 my-lg-0-->
+				<input class="form-control w-75" type="search" placeholder="Recherche" aria-label="Search">
+			    <button class="btn btn-success my-2 my-sm-0 btnSearch" type="submit">Recherche</button>
+  			</form>
+			<div class="dropdown">
+				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMonCompteButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Mon Compte
+				  </button>
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+				    <p class="dropdown-item" href="#">Mes Infos</p>
+				    <p class="dropdown-item" href="#">Sécurité</p>
+				    <p class="dropdown-item" href="#">Déconnexion</p>
+				  </div>
+			</div>
+		</div>
+		</nav>
+	</div>
+	<!-- Boucherie -->
+	<div class="boucherie1 d-flex justify-content-center">
+		<img src="../img/saucisses.jpg" class="text-center w-50">
+		<div class="btn-group merguez">
+		  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Merguez
+		  </button>
+		  <div class="dropdown-menu">
+		    <a class="dropdown-item" href="#">1</a>
+		    <a class="dropdown-item" href="#">2</a>
+		    <a class="dropdown-item" href="#">3</a>
+		    <a class="dropdown-item" href="#">5</a>
+		    <a class="dropdown-item" href="#">10</a>
+		  </div>
+		  </div>
+		<div class="btn-group chistora">
+		  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Chistora
+		  </button>
+		  <div class="dropdown-menu">
+		    <a class="dropdown-item" href="#">1</a>
+		    <a class="dropdown-item" href="#">2</a>
+		    <a class="dropdown-item" href="#">3</a>
+		    <a class="dropdown-item" href="#">5</a>
+		    <a class="dropdown-item" href="#">10</a>
+		  </div>
+		</div>
+		<div class="btn-group	saucisses">
+		  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Saucisses
+		  </button>
+		  <div class="dropdown-menu">
+		    <a class="dropdown-item" href="#">1</a>
+		    <a class="dropdown-item" href="#">2</a>
+		    <a class="dropdown-item" href="#">3</a>
+		    <a class="dropdown-item" href="#">5</a>
+		    <a class="dropdown-item" href="#">10</a>
+		  </div>
+		</div>
+		<div class="btn-group travers">
+		  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Travers de porc
+		  </button>
+		  <div class="dropdown-menu">
+		    <a class="dropdown-item" href="#">1</a>
+		    <a class="dropdown-item" href="#">2</a>
+		    <a class="dropdown-item" href="#">3</a>
+		    <a class="dropdown-item" href="#">5</a>
+		    <a class="dropdown-item" href="#">10</a>
+		  </div>
+		</div>	
+	</div>
+
+
+	<!-- Panier -->
+	<div class="choix-modes" style="max-width : 14rem;">
+		<div class="d-flex justify-content-end">
+			<button href ="#" type="button" class="btn btn-primary" title="Panier" data-container="body" data-placement="bottom" data-toggle="popover" 
+			data-trigger="focus"data-html="true" rel="panier" data-content="<b>Contenu du panier :</b> ">
+				<!-- Icone -->
+				<i class="bi bi-basket-fill panier"></i>	
+			</button>
+		</div>
+	
+
+	<!-- Choix des modes -->
+		<div class="d-flex justify-content-end">
+			<div class="card">
+		  		<h6 class="card-header">Mode de livraison actuel : <span class="badge badge-info" id="currentModLivraison">Scooter</span></h6>
+		  		<div class="card-body">
+		    		<div class="dropdown">
+		  				<button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    		Choix du mode
+		  				</button>
+		  				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    				<p class="dropdown-item select-mod-livraison" href="#">Scooter</p>
+		    				<p class="dropdown-item select-mod-livraison" href="#">Utilitaire</p>
+		    				<p class="dropdown-item select-mod-livraison" href="#">Drône</p>
+		    				<p class="dropdown-item select-mod-livraison" href="#">Retrait magasin</p>
+		    				<p class="dropdown-item select-mod-livraison" href="#">Energie douce</p>
+		  				</div>
+					</div>
+		  		</div>
+			</div>
+		</div>
+		<div class="d-flex justify-content-end">
+			<div class="card" style="width: 14rem;">
+		  		<h6 class="card-header">Mode de fonctionnement : <span class="badge badge-info" id="currentModFonctionnement">Classique</span></h6>
+		  		<div class="card-body">
+		    		<!-- <p class="card-text">Vous pouvez changer le mode de fonctionnement à tout moment.</p> -->
+		    		<div class="dropdown">
+		  				<button class="btn btn-primary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    		Choix du mode
+		  				</button>
+		  				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    				<p class="dropdown-item select-mod-fct" href="#">Classique</p>
+		    				<p class="dropdown-item select-mod-fct" href="#">Lunettes connectées</p>
+		    				<p class="dropdown-item select-mod-fct" href="#">Puce pensée</p>
+		    				<p class="dropdown-item select-mod-fct" href="#">Holographique</p>
+		    				<p class="dropdown-item select-mod-fct" href="#">Mur interactif</p>
+		  				</div>
+					</div>
+		  		</div>
+			</div>
+		</div>
+	<!-- Listes de courses personnalisées -->
+		<div class="d-flex justify-content-end" style="max-width : 14rem;">
+			<div class="jumbotron" style=" margin-bottom : 2px;">
+				<h6 class="display-4 liste-IA-title text-center">Liste de courses personalisée selon vos besoins</h6>
+				<p class="lead liste-IA-sutitle text-center">Voici les listes de produits que notre intelligence artificielle a crée pour vous, vous n'avez plus qu'à payer et recevoir vos courses</p>
+				<hr class="my-4">
+				<button type="button" class="btn btn-primary w-100 btn-liste-IA" data-toggle="modal" data-target="#staticBackdrop">3 jours</button>
+				<button type="button" class="btn btn-primary w-100 btn-liste-IA" data-toggle="modal" data-target="#staticBackdrop">1 semaine</button>
+				<button type="button" class="btn btn-primary w-100 btn-liste-IA" data-toggle="modal" data-target="#staticBackdrop">2 semaines</button>
+				<button type="button" class="btn btn-primary w-100 btn-liste-IA" data-toggle="modal" data-target="#staticBackdrop">3 semaines</button>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="staticBackdropLabel">A venir</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        Les listes de courses générés par l'Intelligence Artificielle seront bientôt disponibles.
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Suggestions de produits par le magasin -->
+		<div class="d-flex justify-content-end" style="max-width : 14rem;">
+			<div class="jumbotron" style=" margin-bottom : 55px;">
+				<h6 class="display-4 liste-IA-title text-center">Suggestions du magasin</h6>
+				<p class="lead liste-IA-sutitle text-center">Voici la listes des produits susceptibles de vous intéresser, que notre intelligence artificielle a trouvé pour vous</p>
+				<hr class="my-4">
+			</div>
+		</div>
+	</div>
+	<!-- Assistant personalisé -->
+	<div class="fixed-action-chatbox" style="display: none;">
+        <div class="card bg-light mb-3">
+            <div class="card-header">Chatbox</div>
+            <div class="card-body">
+                <div class="col-sm-3 col-sm-offset-4 frame">
+                    <ul></ul>
+                    <div>
+                        <div class="msj-rta macro">                        
+                            <div class="text text-r" style="background:whitesmoke !important">
+                                <input class="mytext" placeholder="Type a message"/>
+                            </div> 
+                        </div>
+                        <div style="padding:10px;">
+                            <span class="glyphicon glyphicon-share-alt"></span>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn horizontal click-to-toggle">
+        <a class="float">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-headset my-float" viewBox="0 0 16 16">
+                <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+            </svg>
+        </a>
+    </div>
+	<!-- Affichage des rayons -->
+    <div class="sidebar bg-dark rounded border" id="sidebar-wrapper" style=" margin-bottom : 55px;">
+
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col">
+                    <h6 class="text-light toggleOnSelect" style="display: none;">Rayons sélectionnés</h6>
+                    <div class="insert-rayon"></div> 
+                </div>
+            </div>
+        </div>
+
+        <hr class="bg-light toggleOnSelect" style="display: none;">
+
+    	<div class="container">
+        	<div class="row">
+        		<div class="col sidebar-heading">
+        			<h6 class="text-light">Rayons du magasin</h6> 
+        		</div>
+        	</div>
+        </div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse1">
+            	<img src="../img/sidebar_left/1882.jpg" style="border-radius: 8px; width: 30px;"> Fruits & Légumes
+            </a>
+                <ul class="collapse" id="collapse1">
+  					<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Fruits</a></li>
+  					<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Légumes</a></li>
+  					<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Jus Fruits/Légumes</a></li>
+  					<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Fruits & Légumes secs </a></li>
+				</ul>
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse2">
+            	<img src="../img/sidebar_left/1921.jpg" style="border-radius: 8px; width: 30px;"> Viandes & Poissons
+            </a>
+                <ul class="collapse" id="collapse2">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Viandes</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Volaille</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Poissonnerie</a></li>
+				</ul>
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse3">
+            	<img src="../img/sidebar_left/1952.jpg" style="border-radius: 8px; width: 30px;"> Pains & Patisseries
+            </a>
+                <ul class="collapse" id="collapse3">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-pain" href="#">Pains</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-patisserie" href="#">Pâtisseries</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Viennoiseries</a></li>
+				</ul>
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse4">
+            	<img src="../img/sidebar_left/28127.jpg" style="border-radius: 8px; width: 30px;"> Frais
+            </a>
+                <ul class="collapse" id="collapse4">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Crèmerie</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-dessert" href="#">Yaourts & Desserts</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-fromage" href="#">Fromages</a></li>                	
+				</ul>
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse5">
+            	<img src="../img/sidebar_left/2074.jpg" style="border-radius: 8px; width: 30px;"> Surgelés
+            </a>
+                <ul class="collapse" id="collapse5">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-surgel" href="#">Plats préparés</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-pizza" href="#">Pizzas</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Traiteur</a></li> 
+				</ul>
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse6">
+            	<img src="../img/sidebar_left/2112.jpg" style="border-radius: 8px; width: 30px;"> Epicerie salée
+            </a>
+                <ul class="collapse" id="collapse6">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-feculent" href="#">Féculents</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-condiment" href="#">Condiments</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Huiles & Vinaigres</a></li> 
+				</ul>
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse7">
+            	<img src="../img/sidebar_left/2183.jpg" style="border-radius: 8px; width: 30px;"> Epicerie sucrée
+            </a>
+                <ul class="collapse" id="collapse7">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Petit-déjeuner</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Biscuits & Gâteaux</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Chocolats & Bonbons</a></li> 
+				</ul>            
+            <a class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse" href="#collapse8">
+            	<img src="../img/sidebar_left/27070.jpg" style="border-radius: 8px; width: 30px;"> Boissons
+            </a>
+                <ul class="collapse" id="collapse8">
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category" href="#">Eaux</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-vin" href="#">Vins & Spiritueux</a></li>
+                	<li class="list-group-item list-group-item-action bg-dark text-light" data-toggle="collapse"><a class="category sel-soda" href="#">Sodas</a></li> 
+				</ul>  
+        </div>
+    </div>
+
+    <!-- Zone d'affichage des articles à modifier -->
+    <div class="insert-article row">
+        
+    </div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav d-flex w-100">
+		      <a class="nav-link flex-fill text-center nav-footer" href="#">Informations légales <span class="sr-only">(current)</span></a>
+		      <a class="nav-link flex-fill text-center nav-footer" href="#">Plan du site</a>
+		      <a class="nav-link flex-fill text-center nav-footer" href="#">Nous contacter</a>
+		      <a class="nav-link flex-fill text-center nav-footer" href="#">BioTech</a>
+		    </div>
+		  </div>
+		</nav>
+	</footer>
+
+	<!-- Install jQuery 3.5.1 -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<!-- Install Bootstrap 4.6 bundled with popper.js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+	<!-- Scripts -->
+	<script src="../js/footer.js"></script>	
+	<script src="../js/mode.js"></script>
+	<script src="../js/article.js"></script>
+	<script src="../js/instantiate.js"></script>
+	<script src= "../js/panier.js"></script>
+
+</body>
+</html>
