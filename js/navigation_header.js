@@ -29,8 +29,7 @@ $(document).on("click", ".btnButchers", function() {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
-	      document.getElementById("mainContainer").innerHTML =
-	      this.responseText;
+			document.body.innerHTML = this.responseText;
     	}
     }
      xhttp.open("GET", "http://localhost:7800/src/butchers_shop.html");
@@ -40,14 +39,13 @@ $(document).on("click", ".btnButchers", function() {
 
 
 
-// Get back to the navigation menu from butchers shop
+// Go back to the main menu
 $(document).on("click", ".btnMainMenu", function() {
 
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
-	      document.getElementById("mainContainer").innerHTML =
-	      this.responseText;
+			document.body.innerHTML = this.responseText;
     	}
     }
      xhttp.open("GET", "http://localhost:7800/src/main_menu.html");
@@ -61,8 +59,7 @@ $(document).on("click", ".btnDelivery", function() {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 	    if (this.readyState == 4 && this.status == 200) {
-	      document.getElementById("mainContainer").innerHTML =
-	      this.responseText;
+			document.body.innerHTML = this.responseText;
     	}
     }
      xhttp.open("GET", "http://localhost:7800/src/delivery.html");
